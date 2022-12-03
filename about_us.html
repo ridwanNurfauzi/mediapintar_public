@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <title>Mediapintar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .load-panel {
+            animation: anim .8s;
+            visibility: hidden;
+        }
+
+        .loading {
+            width: 5.5em;
+            height: 5.5em;
+        }
+        @keyframes anim {
+            0% {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loading panel -->
+    <div class="bg-light position-fixed fixed-top w-100 h-100 d-flex justify-item-center justify-content-center load-panel">
+        <div class="spinner-border text-primary align-self-center justify-self-center h4 loading" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- /Loading panel -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light position-sticky fixed-top nav-bg">
+        <a class="navbar-brand" href="#">
+            <img src="icon.png" width="30" height="30" class="my-auto">
+            <img src="brand.png" alt="Mediapintar.com" height="12" class="my-auto">
+        </a>
+        <div class="navbar-toggler border-0">
+            <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">Menu
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mr-3">
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+            </ul>
+            <div>
+                <hr>
+            </div>
+            <div class="form-inline my-2 my-md-0">
+                <hr>
+                <a href="login.html" class="btn btn-outline-primary border-0 rounded rounded-pill">Login</a>
+                <a href="register.html" class="btn btn-success border-0 rounded rounded-pill mx-1">Daftar</a>
+            </div>
+        </div>
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Tentang Kami -->
+    <div class="bg-light bg-opacity-25 py-4 pb-5 border">
+        <div class="container">
+            <h3 class="text-center mb-5 mt-4">Tentang Kami</h3>
+            <div class="row">
+                <div class="col-sm-5 text-center">
+                    <img src="logo.png" alt="Mediapintar.com" class="bg-white rounded rounded-5 p-3 m-1" width="240">
+                </div>
+                <div class="col-sm-7">
+                    <p class="text-justify">
+                        Di zaman yang sudah semakin canggih dan berkembang pesat pada saat ini, website sudah menjadi
+                        salah satu hal yang menjadi kebutuhan penting bagi berbagai kalangan. Begitu banyak kegiatan
+                        yang dilakukan pada website misalnya saja seperti kegiatan belajar.
+                    </p>
+                    <p class="text-justify">
+                        Pada bagian kata “media” menunjukkan media untuk pembelajaran.
+                        Pada bagian kata “pintar” menunjukkan tujuan website yang akan kami buat yaitu mencerdaskan para
+                        generasi muda dan pelajar.
+                        Pada bagian “.com” menunjukkan domain yang akan digunakan.
+                    </p>
+                </div>
+            </div><hr>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h4>Visi dan Misi</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5 class="text-center">Visi</h5>
+                    <p class="text-justify">
+                        Visi dari situs web “Mediapintar.com” adalah Menjadi situs yang mudah digunakan dengan kualitas
+                        terbaik dengan konsep “Media pintar” yang unik ini menjadi daya tarik bagi client dan kualitas
+                        Pembelajaran yang dihasilkan bisa memuaskan client sehingga menjadi suatu daya tarik yang lain
+                        bagi client untuk terus menggunakannya.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h5 class="text-center">Misi</h5>
+                    <p class="text-justify">
+                    <ol>
+                        <li>
+                            Mengembangkan situs web “Mediapintar.com” ini menjadi situs web yang di gunakan banyak
+                            pelajar.</li>
+                        <li>
+                            Mengembangkan metode pembelajaran menjadi lebih modern, efisien, dan efektif.</li>
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Tentang Kami -->
+
+
+    <!-- Footer -->
+    <div class="bg-dark text-light p-4 px-5 d-flex flex-wrap justify-content-between shadow shadow-lg">
+        <div>Copyright &copy; 2022 Mediapintar.com</div>
+        <div>
+            Made with
+            <i class="bi bi-heart-fill text-danger"></i>
+        </div>
+    </div>
+    <!-- /Footer -->
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

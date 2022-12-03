@@ -1,0 +1,11 @@
+	Untuk dapat melihat quotes dan iklan pada halaman utama (index.html) maka URLnya harus berupa localhost, http, atau https.
+
+	Berikut langkah-langkah untuk membuat URL localhost dengan PHP :
+1. Buka Command Prompt (CMD) atau Terminal.
+2. Arahkan pada direktori ini.
+3. Ketik perintah "php -S localhost:8000" tanpa tanda kutip.
+4. Buka browser.
+5. Lalu ketik URL "localhost:8000" tanpa tanda kutip.
+
+# Perintah di atas dapat berfungsi jika program PHP atau xampp sudah terpasang pada perangkat.
+

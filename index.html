@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+    <title>Mediapintar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loading panel -->
+    <div
+        class="bg-light position-fixed fixed-top w-100 h-100 d-flex justify-item-center justify-content-center load-panel">
+        <div class="spinner-border text-primary align-self-center justify-self-center h4 loading" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- /Loading panel -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light position-sticky fixed-top nav-bg shadow">
+        <a class="navbar-brand" href="#">
+            <img src="icon.png" width="30" height="30" class="my-auto">
+            <img src="brand.png" alt="Mediapintar.com" height="12" class="my-auto">
+        </a>
+        <div class="navbar-toggler border-0">
+            <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">Menu
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#home">Beranda</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#kelas">Kelas</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#about">Tentang Kami</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#section">Section</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#quotes">Quotes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Content -->
+    <div class="bg-light border-bottom" id="home">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-7 text-center">
+                    <img src="content1.png" alt="content1" class="rounded w-100">
+                </div>
+                <div class="col-md-5 d-flex justify-content-center flex-column bg-light">
+                    <h2 class="my-3">Mediapintar.com</h2>
+                    <p class="my-3">
+                        <b>Selamat datang</b>,
+                        di situs web pembelajaran <b>Mediapintar.com</b>.
+                    </p>
+                    <a href="#kelas" class="btn btn-outline-primary my-2">
+                        Mulai belajar
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Content -->
+
+    <!-- Kelas -->
+    <div class="bg-white" id="kelas">
+        <div class="container py-4">
+            <h2 class="text-center pb-2">Kelas</h2>
+            <div class="d-flex align-content-center justify-content-center flex-wrap">
+                <div class="border border-1 rounded m-2 p-3 text-center shadow class-btn" onclick="location.href = '/kelas10/index.html'"
+                    style="width: 240px;height: 140px;">
+                    <h1><i class="bi bi-door-open"></i></h1>
+                    <h5>Kelas 10</h5>
+                </div>
+                <div class="border border-1 rounded m-2 p-3 text-center shadow class-btn" onclick="location.href = '/kelas_11/index.html'"
+                    style="width: 240px;height: 140px;">
+                    <h1><i class="bi bi-journal-arrow-up"></i></h1>
+                    <h5>Kelas 11</h5>
+                </div>
+                <div class="border border-1 rounded m-2 p-3 text-center shadow class-btn" onclick="kelasBelumTersedia()"
+                    style="width: 240px;height: 140px;">
+                    <h1><i class="bi bi-bookmark-star"></i></h1>
+                    <h5>Kelas 12</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Kelas -->
+
+    <!-- Tentang Kami -->
+    <div class="bg-light bg-opacity-25 py-4 border" id="about">
+        <div class="container">
+            <h3 class="text-center mb-5 mt-4">Tentang Kami</h3>
+            <div class="row">
+                <div class="col-sm-5 text-center">
+                    <img src="logo.png" alt="Mediapintar.com" class="bg-white rounded rounded-5 p-3 m-1" width="240">
+                </div>
+                <div class="col-sm-7">
+                    <p class="text-justify">
+                        Di zaman yang sudah semakin canggih dan berkembang pesat pada saat ini, website sudah menjadi
+                        salah satu hal yang menjadi kebutuhan penting bagi berbagai kalangan. Begitu banyak kegiatan
+                        yang dilakukan pada website misalnya saja seperti kegiatan belajar.
+                    </p>
+                    <p class="text-justify">
+                        Pada bagian kata “media” menunjukkan media untuk pembelajaran.
+                        Pada bagian kata “pintar” menunjukkan tujuan website yang akan kami buat yaitu mencerdaskan para
+                        generasi muda dan pelajar.
+                        Pada bagian “.com” menunjukkan domain yang akan digunakan.
+                    </p>
+                    <p>
+                        <a href="about_us.html" class="btn btn-link">Baca lebih banyak >></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Tentang Kami -->
+
+    <!-- Number Counter -->
+    <div class="bg-secondary p-4 text-light" id="section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-3 pb-4">
+                    <table>
+                        <tr>
+                            <td rowspan="3">
+                                <i class="bi bi-file-earmark-text display-4"></i>
+                            </td>
+                            <td>
+                                <h1 id="cMapel" class="">10</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Mata Pelajaran
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-3 pb-4">
+                    <table>
+                        <tr>
+                            <td rowspan="3">
+                                <i class="bi bi-people display-4"></i>
+                            </td>
+                            <td>
+                                <h1 id="cManager" class="">3</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Manager
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-3 pb-4">
+                    <table>
+                        <tr>
+                            <td rowspan="3">
+                                <i class="bi bi-pencil-square display-4"></i>
+                            </td>
+                            <td>
+                                <h1 id="cMateri" class="">30</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Materi
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-3 pb-4">
+                    <table>
+                        <tr>
+                            <td rowspan="3">
+                                <i class="bi bi-house-door display-4"></i>
+                            </td>
+                            <td>
+                                <h1 id="cMapel" class="">1</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Lembaga Pendidikan
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Number Counter -->
+
+    <!-- Premium -->
+    <div class="container content">
+        <div class="row gutters">
+            <div class="col-md-4 col-md-4 col-sm-12">
+                <div class="plan-card plan-one">
+                    <div class="pricing-header">
+                        <h4 class="plan-title">SeMinggu</h4>
+                        <div class="plan-cost">Rp. 20.000,00</div>
+                        <div class="plan-save">Hemat Rp. 5.000,00</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Bebas Iklan</li>
+                    </ul>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-info btn-md btn-rounded">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-4 col-sm-12">
+                <div class="plan-card plan-one">
+                    <div class="pricing-header orange">
+                        <h4 class="plan-title">SeBulan</h4>
+                        <div class="plan-cost">Rp. 240.000,00</div>
+                        <div class="plan-save">Hemat Rp. 60.000,00</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Bebas Iklan</li>
+                    </ul>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-danger btn-md btn-rounded">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-4 col-sm-12">
+                <div class="plan-card plan-one">
+                    <div class="pricing-header green">
+                        <h4 class="plan-title">SeSemester</h4>
+                        <div class="plan-cost">Rp. 1.240.000,00</div>
+                        <div class="plan-save">Hemat Rp. 1.240.000,00</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Bebas Iklan</li>
+                    </ul>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-info btn-md btn-rounded">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Premium -->
+
+    <!-- Iklan -->
+    <div class="w-100 border-top border-bottom">
+        <div class="container">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <center>
+                    iklan
+                    <div class="w-75" id="ads1">
+                        Memuat iklan . .
+                    </div>
+                </center>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- /Iklan -->
+
+    <!-- Testimony -->
+    <div class="container mt-5 mb-5">
+
+        <div class="row g-2">
+            <div class="col-md-4">
+                <div class="card p-3 text-center px-4">
+                    <div class="user-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg" class="rounded-circle" width="80">
+                    </div>
+
+                    <div class="user-content">
+
+                        <h5 class="mb-0">Bruce Hardy</h5>
+                        <span>Software Developer</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div class="ratings">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 text-center px-4">
+                    <div class="user-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg" class="rounded-circle" width="80">
+                    </div>
+
+                    <div class="user-content">
+
+                        <h5 class="mb-0">Mark Smith</h5>
+                        <span>Web Developer</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div class="ratings">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card p-3 text-center px-4">
+
+                    <div class="user-image">
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg" class="rounded-circle" width="80">
+
+                    </div>
+
+                    <div class="user-content">
+
+                        <h5 class="mb-0">Veera Duncan</h5>
+                        <span>Software Architect</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    </div>
+
+                    <div class="ratings">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Testimony -->
+
+    <!-- Quotes -->
+    <div class="bg-light w-100 p-2 pb-4 border-bottom" id="quotes">
+        <div class="container">
+            <h3 class="text-center my-3">Quotes</h3>
+            <div class="border p-4 rounded text-center rounded-lg shadow py-5">
+                <div id="qText" class="font-monospace mb-3">Memuat . .</div>
+                <div id="qAuthor" class="font-monospace"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Quotes -->
+
+
+    <!-- Suggestion box -->
+    <div class="w-100 px-3 py-5">
+        <div class="container">
+            <h5 class="pb-3">Ada keluhan? Silahkan beri masukan pada kami : )</h5>
+
+            <form>
+                <div class="form-group">
+                    <label for="emailS">Email</label>
+                    <input type="email" class="form-control" id="emailS" placeholder="Silahkan masukkan email Anda . .">
+                </div>
+                <div class="form-group">
+                    <label for="txtS">Saran</label>
+                    <textarea name="txtS" id="txtS" rows="3" class="form-control"
+                        placeholder="Silahkan masukkan Saran Anda . ."></textarea>
+                </div>
+
+                <input type="reset" value="Reset" class="btn btn-warning">
+                <input type="button" value="Kirim" class="btn btn-primary" onclick="sClick()">
+            </form>
+        </div>
+    </div>
+    <!-- /Suggestion box -->
+
+    <!-- Footer -->
+    <div class="bg-light text-secondary p-4 px-5 d-flex flex-wrap justify-content-between w-100 border-top">
+        <div>Copyright &copy; 2022 <b>Mediapintar.com</b></div>
+        <div>
+            Made with
+            <i class="bi bi-heart-half text-danger"></i>
+        </div>
+    </div>
+    <!-- /Footer -->
+
+
+    <!-- <script src="js/script.js"></script> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+
+
+    <script>
+
+        let r;
+        let quotes;
+        let iklan = Math.floor(Math.random() * 4);
+
+
+
+        window.onload = (e) => {
+            fetch("quotes.json").then((res) => res.json())
+                .then((json) => {
+                    r = Math.floor(Math.random() * 7);
+                    document.getElementById("qText").innerHTML = `Memuat . . .`;
+                    document.getElementById("qAuthor").innerHTML = ``;
+                    quotes = json;
+                    console.info("r = " + r);
+                })
+                .catch((err) => {
+                    document.getElementById("qText").innerHTML = `${err}`;
+                }).finally(() => {
+                    document.getElementById("qText").innerHTML = `“${quotes['body'][r]['text']}”`;
+                    document.getElementById("qAuthor").innerHTML = `<b>- - ${quotes['body'][r]['author']} - -</b>`;
+
+                });
+
+            $('#ads1')[0].innerHTML = `<img src="iklan/iklan${iklan + 1}.jpg" width="180" alt="iklan ${iklan + 1}">`;
+        }
+
+        const validateEmail = (email) => {
+            return email.match(
+                /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        }
+
+        function sClick() {
+            let sEmail = document.getElementById("emailS");
+
+            if (sEmail['value'] == '')
+                swal("Mohon maaf", "Email tidak dapat dikosongkan.", "warning");
+            else if (validateEmail(sEmail['value']) == null)
+                swal("Mohon maaf", "Email tidak valid.", "warning");
+            else if (document.getElementById('txtS').value == '')
+                swal("Mohon maaf", "Text saran tidak dapat di kosongkan.", "warning");
+
+            else if (validateEmail(sEmail['value']) != null)
+                swal("Terima kasih", "Saran Anda telah terkirim.", "success");
+            else
+                swal("Mohon maaf", "Saran Anda tidak terkirim.", "error");
+        }
+
+        function kelasBelumTersedia() {
+            swal("Mohon maaf", "Kelas ini belum tersedia.", "warning");
+        }
+
+        function fiturBelumTersedia() {
+            swal("Mohon maaf", "Fitur ini belum tersedia.", "warning");
+        }
+
+    </script>
+</body>
+
+</html>
